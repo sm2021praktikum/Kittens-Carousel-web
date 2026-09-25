@@ -27,7 +27,7 @@ Resources:
         - Key: Name
           Value: !Sub Web Server of ${AWS::StackName}
       UserData: !Base64 |
-        #! /bin/bash
+        #!/bin/bash
         dnf update -y
         dnf install httpd -y
         FOLDER="https://raw.githubusercontent.com/sm2021praktikum/Kittens-carousel-web/refs/heads/main/static-web"
