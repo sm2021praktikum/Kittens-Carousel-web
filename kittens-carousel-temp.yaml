@@ -30,7 +30,7 @@ Resources:
         #! /bin/bash
         dnf update -y
         dnf install httpd -y
-        FOLDER="https://raw.githubusercontent.com/guile-clarusway/kittenscarousel/refs/heads/main/static-web"
+        FOLDER="https://raw.githubusercontent.com/sm2021praktikum/Kittens-carousel-web/refs/heads/main/static-web"
         cd /var/www/html
         wget ${FOLDER}/index.html
         wget ${FOLDER}/cat0.jpg
